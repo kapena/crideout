@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:700,800,800i');
+$opensans:'Open Sans', sans-serif;
+
+$border:#464646;
+
+h1,h2,h3,h4{
+  font-family:$opensans;
+}
+
+html {
+  height:100em;
+}
+.cover-container{
+  height:600px;
+  //text-shadow: 0 .05rem .1rem rgba(0,0,0,.3);
+  box-shadow: inset 0 0 5rem rgba(0,0,0,.9);
+  background:url(https://s3-us-west-2.amazonaws.com/designdiagrams/header2.jpg) no-repeat;
+  background-size:cover;
+  width:100%;
+  max-width:100%;
+}
+
+/* Padding for spacing */
+.inner {
+  padding:10rem 5rem;
+}
+
+.fine, .cover-heading{
+  font-family:$opensans;
+  font-weight:800;
+}
+
+.fine{
+  font-style:italic;
+}
+
+.viewWork{
+  padding-top:5px;
+}
+
+.cover .btn-md {
+  //padding: .75rem 1.25rem;
+  font-weight: bold;
+}
+
+.bellow-fold{
+  padding:5rem;
+}
+
+.text-center{
+  padding:20px 0px 50px;
+}
+.title{
+  padding:0px 0px 10px;
+  text-align:center;
+  border-bottom:1px solid $border;
+}
+
+.disc{
+  padding-top:5px;
+}
+
+.mediumYear{
+    //border-bottom: 1px solid $border;
+    border-top: 1px solid $border;
+    padding: 5px 0px 5px;
+}
+
+.intro{
+  margin:1rem 1rem 1rem
+}
