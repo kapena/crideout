@@ -1,20 +1,23 @@
 <header>
-<!-- <a href="{{ "/" | relative_url}}">{{ site.title | escape }}</a>     -->
-<nav class="navbar sticky-top navbar-toggleable-md navbar-light bg-faded">
-  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <a class="navbar-brand" href="{{ "/" | relative_url }}">Caroline Rideout</a>
-  <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-    <div id="pad-nav" class="navbar-nav">
-      <a id="home" class="nav-item nav-link active" href="{{ "/" | relative_url }}">Portfolio<span class="sr-only">(current)</span></a>
-    <!-- Loop thru site pages -->
-    {% for my_page in site.pages %}
-        {% if my_page.title %}
-      <a id="links" class="nav-item nav-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
-      {% endif %}
-    {% endfor %}
+  <nav class="navbar sticky-top navbar-toggleable-md navbar-light bg-faded">
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="{{ "/" | relative_url }}">Caroline Rideout</a>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+
+      <!-- <a id="home" class="nav-item nav-link" href="{{ "/" | relative_url }}">Portfolio</a> -->
+      <!-- Loop thru site pages -->
+      {% for my_page in site.pages %}
+          {% if my_page.title %}
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a id="links" class="nav-item nav-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
+        </li>
+      </ul>
+        {% endif %}
+      {% endfor %}
+
     </div>
-  </div>
-</nav>
+  </nav>
 </header>

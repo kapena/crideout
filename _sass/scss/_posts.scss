@@ -1,6 +1,15 @@
 $lora:'Lora','serif';
 $opensans:'Open Sans', sans-serif;
 
+label{
+  font-family: $lora;
+  font-weight: 900;
+}
+
+.form-group{
+  margin:2rem 0rem 2rem;
+}
+
 #img-pad{
     padding:20px;
 }
@@ -19,6 +28,7 @@ $opensans:'Open Sans', sans-serif;
 
 .contact{
   padding:2em;
+  margin:8rem;
 }
 
 #aboutPadd{
@@ -36,6 +46,11 @@ $opensans:'Open Sans', sans-serif;
 .post-header{
   padding-top:1em;
 }
+
+#contact-header{
+  padding-bottom: 4rem;
+}
+
 .footer{
   text-align:center;
   padding:4rem 0;

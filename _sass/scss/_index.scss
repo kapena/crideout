@@ -2,19 +2,36 @@
 $opensans:'Open Sans', sans-serif;
 
 $border:#464646;
+// LAYOUT 4
+// INDEX.HTML LANDSCAPES.HTML, FIGURES.HTML , STUDIES.HTML
 
 h1,h2,h3,h4{
   font-family:$opensans;
 }
 
-html {
-  height:100em;
-}
 .cover-container{
   height:600px;
   //text-shadow: 0 .05rem .1rem rgba(0,0,0,.3);
   box-shadow: inset 0 0 5rem rgba(0,0,0,.9);
   background:url(https://s3-us-west-2.amazonaws.com/designdiagrams/header2.jpg) no-repeat;
+  background-size:cover;
+  width:100%;
+  max-width:100%;
+}
+.cover-container-studies{
+  height:600px;
+  //text-shadow: 0 .05rem .1rem rgba(0,0,0,.3);
+  box-shadow: inset 0 0 5rem rgba(0,0,0,.9);
+  background:url(https://s3-us-west-2.amazonaws.com/caroline-site/studies/study_3.jpg) no-repeat;
+  background-size:cover;
+  width:100%;
+  max-width:100%;
+}
+.cover-container-figures{
+  height:600px;
+  //text-shadow: 0 .05rem .1rem rgba(0,0,0,.3);
+  box-shadow: inset 0 0 2rem rgba(0,0,0,.5);
+  background:url(https://s3-us-west-2.amazonaws.com/caroline-site/figures/f_5.jpg) no-repeat;
   background-size:cover;
   width:100%;
   max-width:100%;
@@ -29,7 +46,9 @@ html {
   font-family:$opensans;
   font-weight:800;
 }
-
+#home{
+  color:#025aa5;
+}
 .fine{
   font-style:italic;
 }
@@ -68,4 +87,13 @@ html {
 
 .intro{
   margin:1rem 1rem 1rem
+}
+
+.work, .works, .introduction{
+  margin:1rem 0rem 1rem;
+}
+@include media-breakpoint-down(md) {
+  .inner {
+    padding: 5rem 2rem;
+  }
 }
