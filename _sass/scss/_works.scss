@@ -1,0 +1,75 @@
+$lora:'Lora','serif';
+$opensans:'Open Sans', sans-serif;
+
+html, body{
+  height:100%
+}
+
+label{
+  font-family: $lora;
+  font-weight: 900;
+}
+
+.form-group{
+  margin:2rem 0rem 2rem;
+}
+
+// #img-pad{
+//     padding:20px;
+// }
+// #t-pad{
+//     @extend #img-pad;
+// }
+
+// #postPadd{
+//     margin-bottom: 10px;
+// }
+//
+// .post-meta{
+//   font-weight: normal;
+//   display: block;
+// }
+
+// .contact{
+//   margin:5rem;
+// }
+//
+
+// #exc-pad{
+//     padding-top: 10px;
+// }
+// #btn-marg{
+//     position: relative;
+//     margin-bottom: 30px;
+// }
+// .post-header{
+//   padding-top:1em;
+// }
+
+// .footer{
+//   text-align:center;
+//   padding:4rem 0;
+//   background-color:#f7f7f7;
+//   top:10rem;
+//   position: relative;
+// }
+//
+// .footer-links, dd{
+//   padding-top:10px;
+//   padding-left:10px;
+//   padding-right:10px;
+//   display:inline-block;
+// }
+//
+// #pad-nav{
+//   padding-right:1em;
+// }
+//
+// p{
+//   font-family: $lora;
+// }
+//
+// h1,h2,h3,h4,h5,small,a,span{
+//   font-family:$opensans;
+//   font-weight: bold;
+// }

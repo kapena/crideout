@@ -1,29 +1,34 @@
 <footer class="footer">
+  {% if site.email %}
+  <dd class="email">
+      <a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+  {% endif %}
+  </dd>
   <div class="container">
-      <h2 class="footer-heading">{{ site.title | escape }}</h2>
+      <!-- <h2 class="footer-heading">{{ site.title | escape }}</h2> -->
         <dl class="footer-links">
-             <dd class="name">
+             <!-- <dd class="name">
                 {% if site.author %}
                   {{ site.author | escape }}
                 {% else %}
                   {{ site.title | escape }}
                 {% endif %}
-             </dd>
-            {% if site.email %}
-            <dd class="email">
-                <a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-            {% endif %}
-            </dd>
-            {% if site.github_username %}
+             </dd> -->
+            {% if site.fb_username %}
             <dd class="facebook">
-                {% include icon-github.html username=site.github_username %}
+                {% include icon-fb.html username=site.fb_username %}
             </dd>
               {% endif %}
-              {% if site.twitter_username %}
+              {% if site.insta_username %}
             <dd class="insta">
-                {% include icon-twitter.html username=site.twitter_username %}
+                {% include icon-insta.html username=site.insta_username %}
             </dd>
               {% endif %}
           </dl>
+          <div class="row">
+            <div class="col-md-12">
+              <small><span class="built-w">This awesome site was built with Aloha by<a target="_blank" href="https://brentwhite.design"> brentwhite.design</a></span></small>
+            </div>
+          </div>
   </div>
 </footer>

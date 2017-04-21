@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:700,800,800i');
+@import url('https://fonts.googleapis.com/css?family=Lora:400,700');
 $opensans:'Open Sans', sans-serif;
+$lora:'Lora','serif';
 
 $border:#464646;
 // LAYOUT 4
@@ -7,6 +9,32 @@ $border:#464646;
 
 h1,h2,h3,h4{
   font-family:$opensans;
+}
+
+label{
+  font-family: $lora;
+  font-weight: 700;
+}
+
+#pad-nav{
+  padding-right:1em;
+}
+
+p{
+  font-family: $lora;
+}
+
+h1,h2,h3,h4,h5,small,span,dd{
+  font-family:$opensans;
+  font-weight: bold;
+}
+
+a{
+  font-family:$opensans;
+}
+
+.fancybox-caption {
+  font-family: $lora !important;
 }
 
 .cover-container{
@@ -85,15 +113,35 @@ h1,h2,h3,h4{
     padding: 5px 0px 5px;
 }
 
+.sold-padd{
+  font-weight: 700;
+  padding:5px 2px 5px;
+}
+
 .intro{
   margin:1rem 1rem 1rem
 }
 
-.work, .works, .introduction{
-  margin:1rem 0rem 1rem;
+.works, .introduction{
+  margin:2rem 0rem 1rem;
 }
 @include media-breakpoint-down(md) {
   .inner {
     padding: 5rem 2rem;
   }
+}
+
+.footer{
+  text-align:center;
+  padding:4rem 0;
+  background-color:#f7f7f7;
+  top:10rem;
+  position: relative;
+}
+
+.footer-links, dd{
+  padding-top:10px;
+  padding-left:10px;
+  padding-right:10px;
+  display:inline-block;
 }
