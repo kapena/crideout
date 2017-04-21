@@ -1,19 +1,27 @@
 <footer class="footer">
-  {% if site.email %}
-  <dd class="email">
-      <a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-  {% endif %}
-  </dd>
   <div class="container">
-      <!-- <h2 class="footer-heading">{{ site.title | escape }}</h2> -->
+    <div class="row">
+      <div class="col-lrg-12 col-md-12">
+        <!-- {% assign pages = site.pages | sort:"weight"  %} -->
+        <!-- Loop thru site pages -->
+        {% assign pages = site.pages | sort:"weight"  %}
+        <!-- Loop thru site pages -->
+        <ul class="navbar-nav">
+        {% for p in pages %}
+        {% if p.title %}
+          <li class="nav-item">
+        <!-- order of navigation by weight front matter -->
+            <a id="links" class="nav-item nav-link" {% if p.url == page.url %}{% endif %} href="{{ p.url | relative_url }}">
+         {{ p.title | escape }}
+       </a>
+          </li>
+          {% endif %}
+          {% endfor %}
+      </div>
+    </div>
+  </div>
+  <div class="container">
         <dl class="footer-links">
-             <!-- <dd class="name">
-                {% if site.author %}
-                  {{ site.author | escape }}
-                {% else %}
-                  {{ site.title | escape }}
-                {% endif %}
-             </dd> -->
             {% if site.fb_username %}
             <dd class="facebook">
                 {% include icon-fb.html username=site.fb_username %}
