@@ -8,7 +8,7 @@ $border:#464646;
 // INDEX.HTML LANDSCAPES.HTML, FIGURES.HTML , STUDIES.HTML
 
 label{
-  font-family: $lora;
+  font-family: $opensans;
   font-weight: 700;
 }
 
@@ -37,16 +37,16 @@ a{
   height:600px;
   //text-shadow: 0 .05rem .1rem rgba(0,0,0,.3);
   box-shadow: inset 0 0 5rem rgba(0,0,0,.9);
-  background:url(https://s3-us-west-2.amazonaws.com/designdiagrams/header2.jpg) no-repeat;
+  background:url(https://s3-us-west-2.amazonaws.com/caroline-site/landscapes/ls_2.jpg) no-repeat;
   background-size:cover;
   width:100%;
   max-width:100%;
 }
-.cover-container-studies{
+.cover-container-oils{
   height:600px;
   //text-shadow: 0 .05rem .1rem rgba(0,0,0,.3);
   box-shadow: inset 0 0 5rem rgba(0,0,0,.9);
-  background:url(https://s3-us-west-2.amazonaws.com/caroline-site/studies/study_3.jpg) no-repeat;
+  background:url(https://s3-us-west-2.amazonaws.com/caroline-site/oils/sunsetb.jpg) no-repeat;
   background-size:cover;
   width:100%;
   max-width:100%;
@@ -100,6 +100,10 @@ a{
   // border-bottom:1px solid $border;
 }
 
+#portfolio{
+  padding-bottom:1rem;
+}
+
 .disc{
   padding-top:5px;
 }
@@ -126,6 +130,10 @@ a{
 @include media-breakpoint-down(md) {
   .inner {
     padding: 5rem 2rem;
+  }
+    // cr logo remove on tablets
+  .logo{
+    display:none;
   }
 }
 
